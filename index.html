@@ -28,6 +28,23 @@
       font-size: clamp(0.85rem, 2.5vw, 1.05rem);
       color: #999;
       letter-spacing: 0.04em;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #bbb;
+      width: 0;
+      animation:
+        typing 2.8s steps(30, end) 0.5s forwards,
+        blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to   { width: 30ch; }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: #bbb; }
+      50%       { border-color: transparent; }
     }
   </style>
 </head>
