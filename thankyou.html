@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Offer Received — jakartainternationalstadium.com</title>
+  <style>
+
+    /* ══════════════════════════════════════════════
+       RESET & BASE
+    ══════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background-color: #f5f5f3;
+      color: #1a1a1a;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.75;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      line-height: 1.15;
+    }
+
+    p, li, a, span, label, button {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ══════════════════════════════════════════════
+       LANGUAGE TOGGLE — CSS ONLY
+    ══════════════════════════════════════════════ */
+    #lang-toggle { display: none; }
+
+    .lang-id { display: none; }
+    .lang-en { display: block; }
+    span.lang-en { display: inline; }
+    span.lang-id { display: none; }
+
+    #lang-toggle:checked ~ * .lang-en,
+    #lang-toggle:checked ~ .topbar .lang-en,
+    #lang-toggle:checked ~ .page-body .lang-en,
+    #lang-toggle:checked ~ footer .lang-en { display: none; }
+
+    #lang-toggle:checked ~ * .lang-id,
+    #lang-toggle:checked ~ .topbar .lang-id,
+    #lang-toggle:checked ~ .page-body .lang-id,
+    #lang-toggle:checked ~ footer .lang-id { display: block; }
+
+    #lang-toggle:checked ~ * span.lang-en,
+    #lang-toggle:checked ~ .topbar span.lang-en,
+    #lang-toggle:checked ~ .page-body span.lang-en,
+    #lang-toggle:checked ~ footer span.lang-en { display: none; }
+
+    #lang-toggle:checked ~ * span.lang-id,
+    #lang-toggle:checked ~ .topbar span.lang-id,
+    #lang-toggle:checked ~ .page-body span.lang-id,
+    #lang-toggle:checked ~ footer span.lang-id { display: inline; }
+
+    /* Toggle pill button */
+    .lang-switch-label {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      cursor: pointer;
+      border: 1.5px solid #3a3a3a;
+      border-radius: 3px;
+      overflow: hidden;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    .lang-opt {
+      font-family: Arial, sans-serif;
+      font-size: 0.68rem;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      padding: 0.35rem 0.6rem;
+      line-height: 1;
+      transition: background-color 0.15s, color 0.15s;
+    }
+
+    .lang-opt-en { border-right: 1.5px solid #3a3a3a; }
+
+    .lang-opt-en { background-color: #e6c84a; color: #1a1a1a; }
+    .lang-opt-id { background-color: transparent; color: #888; }
+
+    #lang-toggle:checked ~ .topbar .lang-opt-en {
+      background-color: transparent; color: #888;
+    }
+    #lang-toggle:checked ~ .topbar .lang-opt-id {
+      background-color: #e6c84a; color: #1a1a1a;
+    }
+
+    /* ══════════════════════════════════════════════
+       STICKY TOP BAR
+    ══════════════════════════════════════════════ */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: #1a1a1a;
+      padding: 0.7rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .topbar-domain {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.72rem;
+      color: #999;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-shrink: 0;
+    }
+
+    .topbar-back {
+      font-family: Arial, sans-serif;
+      font-size: 0.72rem;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #999;
+      text-decoration: none;
+      padding: 0.4rem 0.9rem;
+      border-radius: 2px;
+      border: 1px solid #3a3a3a;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .topbar-back:hover { color: #ccc; border-color: #666; }
+
+    /* ══════════════════════════════════════════════
+       LAYOUT
+    ══════════════════════════════════════════════ */
+    .page-body {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem;
+    }
+
+    .thankyou-card {
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* ══════════════════════════════════════════════
+       CHECKMARK ICON
+    ══════════════════════════════════════════════ */
+    .check-wrap {
+      margin: 0 auto 2rem;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: #e6c84a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .check-wrap svg {
+      width: 32px;
+      height: 32px;
+      stroke: #1a1a1a;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ══════════════════════════════════════════════
+       EYEBROW / BADGE
+    ══════════════════════════════════════════════ */
+    .ty-badge {
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 0.65rem;
+      font-weight: bold;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #888;
+      border: 1px solid #d0d0cc;
+      padding: 0.28rem 0.9rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ══════════════════════════════════════════════
+       HEADING
+    ══════════════════════════════════════════════ */
+    .ty-heading {
+      font-size: clamp(1.5rem, 4.5vw, 2.4rem);
+      color: #1a1a1a;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ══════════════════════════════════════════════
+       BODY TEXT
+    ══════════════════════════════════════════════ */
+    .ty-body {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.9;
+      max-width: 460px;
+      margin: 0 auto 2rem;
+    }
+
+    /* ══════════════════════════════════════════════
+       INFO BOX
+    ══════════════════════════════════════════════ */
+    .ty-infobox {
+      background-color: #fffbea;
+      border: 1.5px solid #e6c84a;
+      border-left: 5px solid #d4a800;
+      border-radius: 4px;
+      padding: 1.4rem 1.75rem;
+      text-align: left;
+      margin-bottom: 2.25rem;
+    }
+
+    .ty-infobox-eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 0.65rem;
+      font-weight: bold;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8a6a00;
+      margin-bottom: 0.75rem;
+    }
+
+    .ty-infobox p {
+      font-size: 0.875rem;
+      color: #4a3900;
+      line-height: 1.85;
+      margin-bottom: 0.6rem;
+    }
+
+    .ty-infobox p:last-child { margin-bottom: 0; }
+    .ty-infobox strong { font-weight: bold; color: #2e2400; }
+
+    /* ══════════════════════════════════════════════
+       BACK BUTTON
+    ══════════════════════════════════════════════ */
+    .btn-back {
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      background-color: #e6c84a;
+      text-decoration: none;
+      padding: 0.75rem 2rem;
+      border-radius: 2px;
+      transition: background-color 0.15s;
+    }
+    .btn-back:hover { background-color: #f0d45a; }
+
+    /* ══════════════════════════════════════════════
+       DIVIDER
+    ══════════════════════════════════════════════ */
+    .ty-divider {
+      border: none;
+      border-top: 1px solid #e2e2de;
+      margin: 2.5rem 0;
+    }
+
+    /* ══════════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════════ */
+    footer {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .footer-meta {
+      font-family: Arial, sans-serif;
+      font-size: 0.7rem;
+      color: #555;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-domain {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.7rem;
+      color: #666;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Language toggle — hidden checkbox -->
+  <input type="checkbox" id="lang-toggle" />
+
+  <!-- ══════════════════════════════════════════════
+       TOP BAR
+  ══════════════════════════════════════════════ -->
+  <div class="topbar">
+    <span class="topbar-domain">jakartainternationalstadium.com</span>
+    <div class="topbar-right">
+      <!-- Language toggle pill -->
+      <label class="lang-switch-label" for="lang-toggle" aria-label="Toggle language">
+        <span class="lang-opt lang-opt-en">EN</span>
+        <span class="lang-opt lang-opt-id">ID</span>
+      </label>
+      <!-- Back link -->
+      <a class="topbar-back" href="/">
+        <span class="lang-en">← Back</span>
+        <span class="lang-id">← Kembali</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       MAIN CONTENT
+  ══════════════════════════════════════════════ -->
+  <div class="page-body">
+    <div class="thankyou-card">
+
+      <!-- Checkmark icon -->
+      <div class="check-wrap">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+
+      <!-- Eyebrow badge -->
+      <div class="ty-badge">
+        <span class="lang-en">Offer Received</span>
+        <span class="lang-id">Penawaran Diterima</span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="ty-heading">
+        <span class="lang-en">Thank you for your offer.</span>
+        <span class="lang-id">Terima kasih atas penawaran Anda.</span>
+      </h1>
+
+      <!-- Body text -->
+      <p class="ty-body">
+        <span class="lang-en">
+          Your submission has been received and forwarded directly
+          to the domain owner. You can expect a personal reply
+          within a few business days if there is interest in
+          moving forward.
+        </span>
+        <span class="lang-id">
+          Pengajuan Anda telah diterima dan diteruskan langsung
+          kepada pemilik domain. Anda dapat mengharapkan balasan
+          pribadi dalam beberapa hari kerja jika ada minat untuk
+          melanjutkan.
+        </span>
+      </p>
+
+      <hr class="ty-divider" />
+
+      <!-- Info box — what happens next -->
+      <div class="ty-infobox">
+        <div class="ty-infobox-eyebrow">
+          <span class="lang-en">What Happens Next</span>
+          <span class="lang-id">Langkah Selanjutnya</span>
+        </div>
+
+        <div class="lang-en">
+          <p>
+            <strong>Review period:</strong> The domain owner reviews
+            all offers personally. There are no automated responses
+            or third-party brokers involved.
+          </p>
+          <p>
+            <strong>Response:</strong> If your offer is of interest,
+            you will be contacted directly via the email address
+            you provided. Please check your inbox — including your
+            spam or promotions folder.
+          </p>
+          <p>
+            <strong>No brokers, no fees:</strong> Any acquisition
+            is handled directly between buyer and seller, keeping
+            the process straightforward and cost-effective for
+            both parties.
+          </p>
+        </div>
+
+        <div class="lang-id">
+          <p>
+            <strong>Masa review:</strong> Pemilik domain meninjau
+            semua penawaran secara pribadi. Tidak ada respons otomatis
+            atau broker pihak ketiga yang terlibat.
+          </p>
+          <p>
+            <strong>Respons:</strong> Jika penawaran Anda diminati,
+            Anda akan dihubungi langsung melalui alamat email yang
+            Anda berikan. Harap periksa inbox Anda — termasuk folder
+            spam atau promosi.
+          </p>
+          <p>
+            <strong>Tanpa broker, tanpa biaya:</strong> Setiap
+            akuisisi ditangani langsung antara pembeli dan penjual,
+            menjaga prosesnya tetap sederhana dan hemat biaya bagi
+            kedua pihak.
+          </p>
+        </div>
+      </div>
+
+      <!-- Back button -->
+      <a class="btn-back" href="/">
+        <span class="lang-en">← Back to Domain Page</span>
+        <span class="lang-id">← Kembali ke Halaman Domain</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ */
+  <footer>
+    <span class="footer-domain">jakartainternationalstadium.com</span>
+    <span class="footer-meta">
+      &copy; 2026 Private Domain Owner &middot; All Rights Reserved
+      &middot; No Official Affiliation
+    </span>
+  </footer>
+
+</body>
+</html>
