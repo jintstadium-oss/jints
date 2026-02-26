@@ -1,1 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="jakartainternationalstadium.com is an independently registered domain name (since July 2018) available for acquisition. Not affiliated with any official entity, government body, or organization." />
+  <title>jakartainternationalstadium.com — Domain Available for Acquisition</title>
+  <style>
+
+    /* ══════════════════════════════════════════════
+       RESET & BASE
+    ══════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background-color: #f5f5f3;
+      color: #1a1a1a;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 1.5rem;
+    }
+
+    p, li, a, span, label, input, textarea, button {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ══════════════════════════════════════════════
+       LANGUAGE TOGGLE — CSS ONLY (no JavaScript)
+       Hidden checkbox drives sibling selectors to
+       swap .lang-en / .lang-id across entire page.
+    ══════════════════════════════════════════════ */
+    #lang-toggle { display: none; }
+
+    /* Default: English visible */
+    .lang-id { display: none; }
+    .lang-en { display: block; }
+    span.lang-en { display: inline; }
+    span.lang-id { display: none; }
+
+    /* When checked: swap to Indonesian */
+    #lang-toggle:checked ~ * .lang-en,
+    #lang-toggle:checked ~ .topbar .lang-en,
+    #lang-toggle:checked ~ .wrapper .lang-en,
+    #lang-toggle:checked ~ footer .lang-en { display: none; }
+
+    #lang-toggle:checked ~ * .lang-id,
+    #lang-toggle:checked ~ .topbar .lang-id,
+    #lang-toggle:checked ~ .wrapper .lang-id,
+    #lang-toggle:checked ~ footer .lang-id { display: block; }
+
+    #lang-toggle:checked ~ * span.lang-en,
+    #lang-toggle:checked ~ .topbar span.lang-en,
+    #lang-toggle:checked ~ .wrapper span.lang-en,
+    #lang-toggle:checked ~ footer span.lang-en { display: none; }
+
+    #lang-toggle:checked ~ * span.lang-id,
+    #lang-toggle:checked ~ .topbar span.lang-id,
+    #lang-toggle:checked ~ .wrapper span.lang-id,
+    #lang-toggle:checked ~ footer span.lang-id { display: inline; }
+
+    /* Toggle pill button */
+    .lang-switch-label {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      cursor: pointer;
+      border: 1.5px solid #3a3a3a;
+      border-radius: 3px;
+      overflow: hidden;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    .lang-opt {
+      font-family: Arial, sans-serif;
+      font-size: 0.68rem;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      padding: 0.35rem 0.6rem;
+      line-height: 1;
+      transition: background-color 0.15s, color 0.15s;
+    }
+
+    .lang-opt-en { border-right: 1.5px solid #3a3a3a; }
+
+    /* Default: EN highlighted */
+    .lang-opt-en { background-color: #e6c84a; color: #1a1a1a; }
+    .lang-opt-id { background-color: transparent; color: #888; }
+
+    /* Checked: ID highlighted */
+    #lang-toggle:checked ~ .topbar .lang-opt-en {
+      background-color: transparent; color: #888;
+    }
+    #lang-toggle:checked ~ .topbar .lang-opt-id {
+      background-color: #e6c84a; color: #1a1a1a;
+    }
+
+    /* ══════════════════════════════════════════════
+       LAYOUT
+    ══════════════════════════════════════════════ */
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid #e2e2de;
+    }
+
+    section:last-of-type { border-bottom: none; }
+
+    /* ══════════════════════════════════════════════
+       STICKY TOP BAR
+    ══════════════════════════════════════════════ */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: #1a1a1a;
+      padding: 0.7rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .topbar-domain {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.72rem;
+      color: #999;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-shrink: 0;
+    }
+
+    .topbar-cta {
+      font-family: Arial, sans-serif;
+      font-size: 0.72rem;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      background-color: #e6c84a;
+      text-decoration: none;
+      padding: 0.4rem 0.9rem;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+
+    .topbar-cta:hover { background-color: #f0d45a; }
+
+    /* ══════════════════════════════════════════════
+       HERO
+    ══════════════════════════════════════════════ */
+    .hero {
+      padding: 4rem 0 3.25rem;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 0.65rem;
+      font-weight: bold;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #888;
+      border: 1px solid #d0d0cc;
+      padding: 0.28rem 0.9rem;
+      border-radius: 2px;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.45rem, 4.5vw, 2.5rem);
+      color: #1a1a1a;
+      margin-bottom: 1.1rem;
+      word-break: break-word;
+    }
+
+    .hero-sub {
+      font-size: 0.88rem;
+      color: #666;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.85;
+    }
+
+    /* ══════════════════════════════════════════════
+       DISCLAIMER BOX
+    ══════════════════════════════════════════════ */
+    .disclaimer-box {
+      background-color: #fffbea;
+      border: 1.5px solid #e6c84a;
+      border-left: 5px solid #d4a800;
+      border-radius: 4px;
+      padding: 1.6rem 1.75rem;
+    }
+
+    .disc-eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 0.65rem;
+      font-weight: bold;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8a6a00;
+      margin-bottom: 0.8rem;
+    }
+
+    .disclaimer-box p {
+      font-size: 0.875rem;
+      color: #4a3900;
+      line-height: 1.85;
+      margin-bottom: 0.8rem;
+    }
+
+    .disclaimer-box p:last-child { margin-bottom: 0; }
+    .disclaimer-box strong { font-weight: bold; color: #2e2400; }
+
+    /* ══════════════════════════════════════════════
+       DOMAIN DETAILS — CARD GRID
+    ══════════════════════════════════════════════ */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #e2e2de;
+      border-radius: 4px;
+      padding: 1rem 1.1rem;
+    }
+
+    .card-label {
+      font-family: Arial, sans-serif;
+      font-size: 0.62rem;
+      font-weight: bold;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-value {
+      font-family: Arial, sans-serif;
+      font-size: 0.875rem;
+      color: #1a1a1a;
+      line-height: 1.5;
+    }
+
+    .card-full { grid-column: 1 / -1; }
+
+    .card-key {
+      border-color: #c8d8c8;
+      background-color: #f5faf5;
+    }
+
+    .card-key .card-label { color: #5a8a5a; }
+    .card-key .card-value { color: #1a3a1a; }
+
+    /* ══════════════════════════════════════════════
+       GOOD FAITH SECTION
+    ══════════════════════════════════════════════ */
+    .goodfaith-body {
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.9;
+      margin-bottom: 1rem;
+    }
+
+    .djki-card {
+      margin-top: 1.5rem;
+      background-color: #f5faf5;
+      border: 1px solid #b8d4b8;
+      border-left: 4px solid #5a9a5a;
+      border-radius: 4px;
+      padding: 1.1rem 1.25rem;
+    }
+
+    .djki-card-label {
+      font-family: Arial, sans-serif;
+      font-size: 0.62rem;
+      font-weight: bold;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #5a8a5a;
+      margin-bottom: 0.5rem;
+    }
+
+    .djki-card p {
+      font-size: 0.825rem;
+      color: #2e4a2e;
+      line-height: 1.8;
+    }
+
+    .djki-card strong { color: #1a3a1a; }
+
+    .djki-placeholder-note {
+      display: block;
+      margin-top: 0.6rem;
+      font-size: 0.75rem;
+      color: #888;
+      font-style: italic;
+    }
+
+    /* ══════════════════════════════════════════════
+       OFFER FORM SECTION
+    ══════════════════════════════════════════════ */
+    .offer-section { text-align: center; }
+
+    .offer-headline {
+      font-family: Georgia, serif;
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: normal;
+      color: #1a1a1a;
+      margin-bottom: 0.6rem;
+    }
+
+    .offer-sub {
+      font-size: 0.875rem;
+      color: #666;
+      max-width: 440px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+
+    /* Form container */
+    .offer-form {
+      background-color: #fff;
+      border: 1px solid #e2e2de;
+      border-radius: 6px;
+      padding: 2rem;
+      text-align: left;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Field group */
+    .field-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .field-group:last-of-type {
+      margin-bottom: 0;
+    }
+
+    /* Label */
+    .field-label {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 0.72rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 0.45rem;
+    }
+
+    .field-required {
+      color: #c0392b;
+      margin-left: 0.15rem;
+      font-size: 0.75rem;
+    }
+
+    /* Input fields */
+    .field-input {
+      display: block;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #1a1a1a;
+      background-color: #fafaf8;
+      border: 1.5px solid #d8d8d4;
+      border-radius: 3px;
+      padding: 0.7rem 0.9rem;
+      outline: none;
+      transition: border-color 0.15s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .field-input:focus {
+      border-color: #1a1a1a;
+      background-color: #fff;
+    }
+
+    .field-input::placeholder {
+      color: #bbb;
+      font-size: 0.85rem;
+    }
+
+    /* Rupiah input wrapper — prefix symbol */
+    .rupiah-wrapper {
+      display: flex;
+      align-items: center;
+      border: 1.5px solid #d8d8d4;
+      border-radius: 3px;
+      background-color: #fafaf8;
+      overflow: hidden;
+      transition: border-color 0.15s;
+    }
+
+    .rupiah-wrapper:focus-within {
+      border-color: #1a1a1a;
+      background-color: #fff;
+    }
+
+    .rupiah-prefix {
+      font-family: Arial, sans-serif;
+      font-size: 0.88rem;
+      font-weight: bold;
+      color: #888;
+      background-color: #f0f0ee;
+      border-right: 1.5px solid #d8d8d4;
+      padding: 0.7rem 0.75rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .rupiah-input {
+      flex: 1;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #1a1a1a;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding: 0.7rem 0.9rem;
+      min-width: 0;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .rupiah-input::placeholder {
+      color: #bbb;
+      font-size: 0.85rem;
+    }
+
+    /* Remove number input spinners */
+    .rupiah-input::-webkit-outer-spin-button,
+    .rupiah-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    .rupiah-input[type=number] { -moz-appearance: textfield; }
+
+    /* Field hint */
+    .field-hint {
+      display: block;
+      margin-top: 0.35rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.72rem;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    /* Submit button */
+    .form-submit-wrap {
+      margin-top: 1.5rem;
+    }
+
+    .btn-submit {
+      display: block;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      color: #f5f5f3;
+      background-color: #1a1a1a;
+      border: 2px solid #1a1a1a;
+      border-radius: 3px;
+      padding: 0.9rem 1.5rem;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.15s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .btn-submit:hover { background-color: #333; border-color: #333; }
+
+    /* Form footnote */
+    .form-footnote {
+      margin-top: 1rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.74rem;
+      color: #aaa;
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* ══════════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════════ */
+    footer {
+      background-color: #1a1a1a;
+      padding: 2.75rem 1.5rem;
+      text-align: center;
+    }
+
+    .footer-inner { max-width: 680px; margin: 0 auto; }
+
+    .footer-domain {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-bottom: 1.25rem;
+      display: block;
+    }
+
+    .footer-legal {
+      font-family: Arial, sans-serif;
+      font-size: 0.74rem;
+      color: #5a5a5a;
+      line-height: 1.85;
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-divider {
+      border: none;
+      border-top: 1px solid #2e2e2e;
+      margin: 1.25rem 0;
+    }
+
+    .footer-meta {
+      font-family: Arial, sans-serif;
+      font-size: 0.68rem;
+      color: #3a3a3a;
+      display: block;
+    }
+
+    .footer-updated {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 0.66rem;
+      color: #3a3a3a;
+      font-style: italic;
+      margin-top: 0.3rem;
+    }
+
+    /* ══════════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════════ */
+    @media (max-width: 520px) {
+      .hero { padding: 3rem 0 2.5rem; }
+      section { padding: 2.25rem 0; }
+      .card-grid { grid-template-columns: 1fr; }
+      .card-full { grid-column: 1; }
+      .disclaimer-box { padding: 1.25rem 1.1rem; }
+      .offer-form { padding: 1.5rem 1.1rem; }
+      .topbar-domain { font-size: 0.6rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!--
+    LANGUAGE TOGGLE CHECKBOX
+    Must be direct sibling of .topbar, .wrapper, footer
+    for CSS ~ selector to reach all child elements.
+  -->
+  <input type="checkbox" id="lang-toggle" />
+
+  <!-- ══════════════════════════════════════════════
+       STICKY TOP BAR
+  ══════════════════════════════════════════════ -->
+  <div class="topbar">
+    <span class="topbar-domain">jakartainternationalstadium.com</span>
+    <div class="topbar-right">
+      <label class="lang-switch-label" for="lang-toggle" title="Switch language / Ganti bahasa">
+        <span class="lang-opt lang-opt-en">EN</span>
+        <span class="lang-opt lang-opt-id">ID</span>
+      </label>
+      <a class="topbar-cta" href="#offer">
+        <span class="lang-en">Make an Offer</span>
+        <span class="lang-id">Ajukan Penawaran</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+    <!-- ① HERO ──────────────────────────────────── -->
+    <section class="hero">
+      <span class="hero-badge">
+        <span class="lang-en">Domain Available for Acquisition</span>
+        <span class="lang-id">Domain Tersedia untuk Akuisisi</span>
+      </span>
+      <h1>jakartainternationalstadium.com</h1>
+      <p class="hero-sub">
+        <span class="lang-en">
+          An independently registered .com domain name since
+          <strong>July 2018</strong>, currently idle with no active
+          content, offered for acquisition openly and in full good faith.
+        </span>
+        <span class="lang-id">
+          Nama domain .com yang didaftarkan secara independen sejak
+          <strong>Juli 2018</strong>, saat ini tidak aktif tanpa konten
+          apapun, ditawarkan untuk akuisisi secara terbuka dan dengan
+          itikad baik sepenuhnya.
+        </span>
+      </p>
+    </section>
+
+    <!-- ② DISCLAIMER ────────────────────────────── -->
+    <section>
+      <div class="disclaimer-box">
+
+        <div class="lang-en">
+          <p class="disc-eyebrow">&#9888; Important Disclaimer</p>
+          <p>
+            <strong>This domain is NOT the official website of Jakarta
+            International Stadium (JIS).</strong> It is
+            <strong>NOT affiliated</strong> with PT Jakarta Propertindo
+            (Jakpro), the Government of DKI Jakarta Province, or any
+            official entity, government body, or organization of any kind.
+          </p>
+          <p>
+            This is simply an independently registered domain name, first
+            registered in <strong>July 2018</strong> &mdash;
+            <strong>prior to the public naming, construction, and
+            operational launch of any associated venue</strong> &mdash;
+            and is offered for acquisition in <strong>good faith and full
+            transparency</strong>.
+          </p>
+          <p>
+            No active content has ever existed on this domain.
+            <strong>No misleading use, no commercial exploitation, and
+            no bad-faith conduct of any kind has occurred at any point
+            since registration in July 2018.</strong>
+          </p>
+        </div>
+
+        <div class="lang-id">
+          <p class="disc-eyebrow">&#9888; Pernyataan Penting</p>
+          <p>
+            <strong>Domain ini BUKAN situs resmi Jakarta International
+            Stadium (JIS).</strong> Domain ini
+            <strong>TIDAK berafiliasi</strong> dengan PT Jakarta
+            Propertindo (Jakpro), Pemerintah Provinsi DKI Jakarta, atau
+            entitas resmi, lembaga pemerintah, maupun organisasi apapun.
+          </p>
+          <p>
+            Ini hanyalah nama domain yang didaftarkan secara independen,
+            pertama kali didaftarkan pada <strong>Juli 2018</strong>
+            &mdash; <strong>sebelum penamaan publik, pembangunan, dan
+            pengoperasian venue terkait apapun</strong> &mdash; dan
+            ditawarkan untuk akuisisi dengan <strong>itikad baik dan
+            transparansi penuh</strong>.
+          </p>
+          <p>
+            Tidak ada konten aktif yang pernah ada di domain ini.
+            <strong>Tidak ada penggunaan yang menyesatkan, eksploitasi
+            komersial, maupun perilaku itikad buruk dalam bentuk apapun
+            yang telah terjadi sejak pendaftaran pada Juli 2018.</strong>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ③ DOMAIN DETAILS — CARD GRID ────────────── -->
+    <section>
+      <h2>
+        <span class="lang-en">Domain Details</span>
+        <span class="lang-id">Detail Domain</span>
+      </h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <p class="card-label">
+            <span class="lang-en">Domain Name</span>
+            <span class="lang-id">Nama Domain</span>
+          </p>
+          <p class="card-value">jakartainternationalstadium.com</p>
+        </div>
+
+        <div class="card">
+          <p class="card-label">
+            <span class="lang-en">Extension</span>
+            <span class="lang-id">Ekstensi</span>
+          </p>
+          <p class="card-value">
+            <span class="lang-en">.com &mdash; Global Top-Level Domain</span>
+            <span class="lang-id">.com &mdash; Domain Tingkat Atas Global</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card-label">
+            <span class="lang-en">Registered Since</span>
+            <span class="lang-id">Terdaftar Sejak</span>
+          </p>
+          <p class="card-value">
+            <span class="lang-en">July 2018</span>
+            <span class="lang-id">Juli 2018</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card-label">
+            <span class="lang-en">Current Status</span>
+            <span class="lang-id">Status Saat Ini</span>
+          </p>
+          <p class="card-value">
+            <span class="lang-en">Idle / Parked &mdash; No active content</span>
+            <span class="lang-id">Tidak Aktif &mdash; Tidak ada konten aktif</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card-label">
+            <span class="lang-en">Use History</span>
+            <span class="lang-id">Riwayat Penggunaan</span>
+          </p>
+          <p class="card-value">
+            <span class="lang-en">No active use, no misleading content, no commercial exploitation since registration</span>
+            <span class="lang-id">Tidak pernah aktif, tidak ada konten menyesatkan, tidak ada eksploitasi komersial sejak pendaftaran</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card-label">
+            <span class="lang-en">Ownership</span>
+            <span class="lang-id">Kepemilikan</span>
+          </p>
+          <p class="card-value">
+            <span class="lang-en">Private individual registrant</span>
+            <span class="lang-id">Pendaftar perseorangan swasta</span>
+          </p>
+        </div>
+
+        <div class="card card-key">
+          <p class="card-label">
+            <span class="lang-en">Registration Intent</span>
+            <span class="lang-id">Tujuan Pendaftaran</span>
+          </p>
+          <p class="card-value">
+            <span class="lang-en">Registered as a descriptive, geographic domain name combination, at a time when no venue of this name had been publicly named, built, or become operational</span>
+            <span class="lang-id">Didaftarkan sebagai kombinasi nama domain deskriptif dan geografis, pada saat belum ada venue dengan nama ini yang telah dinamai secara publik, dibangun, atau beroperasi</span>
+          </p>
+        </div>
+
+        <div class="card card-key">
+          <p class="card-label">
+            <span class="lang-en">Nature of Name</span>
+            <span class="lang-id">Sifat Nama</span>
+          </p>
+          <p class="card-value">
+            <span class="lang-en">A combination of common geographic and descriptive terms; not derived from or targeting any specific trademark or proprietary name</span>
+            <span class="lang-id">Kombinasi istilah geografis dan deskriptif umum; tidak berasal dari atau menargetkan merek dagang atau nama hak milik tertentu apapun</span>
+          </p>
+        </div>
+
+        <div class="card card-full">
+          <p class="card-label">
+            <span class="lang-en">Transfer Method</span>
+            <span class="lang-id">Metode Transfer</span>
+          </p>
+          <p class="card-value">
+            <span class="lang-en">Standard ICANN-compliant registrar transfer upon mutual agreement. No brokers or third-party fees involved.</span>
+            <span class="lang-id">Transfer registrar standar sesuai ICANN atas kesepakatan bersama. Tidak ada broker atau biaya pihak ketiga.</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ④ GOOD FAITH & OPENNESS ──────────────────── -->
+    <section>
+      <h2>
+        <span class="lang-en">Good Faith &amp; Openness</span>
+        <span class="lang-id">Itikad Baik &amp; Keterbukaan</span>
+      </h2>
+
+      <div class="lang-en">
+        <p class="goodfaith-body">
+          We welcome serious inquiries from any party with a genuine
+          interest in acquiring this domain. All communications will be
+          handled in good faith, with full transparency, and with no
+          pressure or conditions of any kind. There is no intention to
+          block any rightful or legitimate use of this domain, and the
+          seller is committed to a straightforward acquisition process
+          for any interested party.
+        </p>
+        <p class="goodfaith-body">
+          This domain consists entirely of common geographic and
+          descriptive terms in the English language and was registered
+          as such, with no intent to target, exploit, or profit from
+          any third party&rsquo;s name, trademark, or goodwill. The
+          seller acknowledges and respects the intellectual property
+          rights of all parties under applicable Indonesian law &mdash;
+          including UU Merek No. 20 Tahun 2016 and UU ITE &mdash; and
+          international frameworks including the UDRP.
+        </p>
+      </div>
+
+      <div class="lang-id">
+        <p class="goodfaith-body">
+          Kami menyambut pertanyaan serius dari pihak manapun yang
+          memiliki minat tulus dalam mengakuisisi domain ini. Semua
+          komunikasi akan ditangani dengan itikad baik, transparansi
+          penuh, dan tanpa tekanan atau syarat apapun. Tidak ada niat
+          untuk menghalangi penggunaan domain ini yang sah atau legal,
+          dan penjual berkomitmen pada proses akuisisi yang lugas bagi
+          pihak yang berminat.
+        </p>
+        <p class="goodfaith-body">
+          Domain ini terdiri sepenuhnya dari istilah geografis dan
+          deskriptif umum dalam bahasa Inggris dan didaftarkan sebagai
+          demikian, tanpa niat untuk menargetkan, mengeksploitasi, atau
+          mengambil keuntungan dari nama, merek dagang, atau goodwill
+          pihak ketiga manapun. Penjual mengakui dan menghormati hak
+          kekayaan intelektual semua pihak berdasarkan hukum Indonesia
+          yang berlaku &mdash; termasuk UU Merek No. 20 Tahun 2016 dan
+          UU ITE &mdash; serta kerangka internasional termasuk UDRP.
+        </p>
+      </div>
+
+      <div class="djki-card">
+        <p class="djki-card-label">
+          <span class="lang-en">&#10003; Trademark Register Due Diligence</span>
+          <span class="lang-id">&#10003; Uji Tuntas Daftar Merek Dagang</span>
+        </p>
+        <div class="lang-en">
+          <p>
+            As of <strong>Jan 2026</strong>, no registered trademark
+            for this domain name or its component terms was identified
+            in the Indonesian trademark register (Direktorat Jenderal
+            Kekayaan Intelektual / DJKI) at pdki-indonesia.dgip.go.id.
+            This search was conducted by the domain owner as part of a
+            good faith review prior to offering the domain for
+            acquisition. The owner will continue to monitor the register
+            periodically.
+          </p>
+          <span class="djki-placeholder-note">
+            &#9998; Replace [Month Year] with the actual date of your
+            DJKI search before publishing.
+          </span>
+        </div>
+        <div class="lang-id">
+          <p>
+            Per <strong>[Bulan Tahun]</strong>, tidak ditemukan merek
+            dagang terdaftar untuk nama domain ini atau
+            komponen-komponen namanya dalam Pangkalan Data Kekayaan
+            Intelektual (PDKI) Direktorat Jenderal Kekayaan Intelektual
+            (DJKI) di pdki-indonesia.dgip.go.id. Penelusuran ini
+            dilakukan oleh pemilik domain sebagai bagian dari tinjauan
+            itikad baik sebelum menawarkan domain untuk akuisisi.
+            Pemilik akan terus memantau daftar secara berkala.
+          </p>
+          <span class="djki-placeholder-note">
+            &#9998; Ganti [Bulan Tahun] dengan tanggal penelusuran
+            DJKI Anda yang sebenarnya sebelum mempublikasikan.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑤ OFFER FORM ──────────────────────────────
+         Three required fields: Full Name / Email /
+         Offer Amount (Rp).
+
+         EMAIL PROTECTION via FormSubmit.co:
+         — Your real email address does NOT appear
+           anywhere in this HTML source.
+         — Replace [YOUR_FORMSUBMIT_HASH] with the
+           unique hash FormSubmit assigns after your
+           first activation (see setup note below).
+         — Honeypot field blocks bots silently.
+         — Submissions are forwarded to your inbox
+           by FormSubmit's server. No JS required.
+
+         SETUP (one-time, before going live):
+         1. Replace [YOUR_FORMSUBMIT_HASH] below with
+            your actual email address ONLY for the
+            very first submission to trigger activation.
+         2. FormSubmit will email you a confirmation
+            link. Click it to activate.
+         3. FormSubmit then emails you your unique
+            opaque hash endpoint (looks like a random
+            string, e.g. abc123def456).
+         4. Replace your email address in the action
+            URL with that hash. Your email is now
+            completely hidden from the HTML source.
+
+         Reference: https://formsubmit.co
+    ──────────────────────────────────────────── -->
+    <section class="offer-section" id="offer">
+
+      <p class="offer-headline">
+        <span class="lang-en">Submit Your Offer</span>
+        <span class="lang-id">Ajukan Penawaran Anda</span>
+      </p>
+
+      <p class="offer-sub">
+        <span class="lang-en">
+          Complete all fields and submit. Your offer will be sent
+          directly to the domain owner for review. All submissions
+          are handled in good faith.
+        </span>
+        <span class="lang-id">
+          Lengkapi semua kolom dan kirimkan. Penawaran Anda akan
+          dikirim langsung kepada pemilik domain untuk ditinjau.
+          Semua pengajuan ditangani dengan itikad baik.
+        </span>
+      </p>
+
+      <!--
+        FormSubmit.co endpoint — your real email address
+        never appears in this HTML source code.
+        Replace [YOUR_FORMSUBMIT_HASH] with your
+        FormSubmit-assigned hash after activation.
+      -->
+      <form
+        class="offer-form"
+        action="https://formsubmit.co/[YOUR_FORMSUBMIT_HASH]"
+        method="POST">
+
+        <!--
+          Honeypot — invisible to real users, catches bots.
+          Must be present and empty on every submission.
+          FormSubmit silently discards any submission
+          where this field is filled.
+        -->
+        <input type="text" name="_honey" style="display:none" />
+
+        <!--
+          Disable FormSubmit's default CAPTCHA page.
+          We rely on the honeypot for bot filtering instead.
+        -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <!--
+          Custom subject line that appears in your inbox
+          for every submission — makes filtering easy.
+        -->
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Offer — jakartainternationalstadium.com" />
+
+        <!--
+          After successful submission, redirect the buyer
+          to a simple thank-you page rather than the default
+          FormSubmit confirmation page.
+          Point this to your own thank-you URL if you
+          create one, or leave as-is to use the default.
+        -->
+        <input
+          type="hidden"
+          name="_next"
+          value="https://jakartainternationalstadium.com/thankyou.html" />
+
+        <!-- Full Name -->
+        <div class="field-group">
+          <label class="field-label" for="field-name">
+            <span class="lang-en">Full Name <span class="field-required">*</span></span>
+            <span class="lang-id">Nama Lengkap <span class="field-required">*</span></span>
+          </label>
+          <input
+            class="field-input"
+            type="text"
+            id="field-name"
+            name="Full Name"
+            required
+            autocomplete="name"
+            placeholder="Your full name" />
+        </div>
+
+        <!-- Email -->
+        <div class="field-group">
+          <label class="field-label" for="field-email">
+            <span class="lang-en">Email Address <span class="field-required">*</span></span>
+            <span class="lang-id">Alamat Email <span class="field-required">*</span></span>
+          </label>
+          <input
+            class="field-input"
+            type="email"
+            id="field-email"
+            name="Email Address"
+            required
+            autocomplete="email"
+            placeholder="you@example.com" />
+        </div>
+
+        <!-- Offer Amount in Rupiah -->
+        <div class="field-group">
+          <label class="field-label" for="field-offer">
+            <span class="lang-en">Offer Amount <span class="field-required">*</span></span>
+            <span class="lang-id">Jumlah Penawaran <span class="field-required">*</span></span>
+          </label>
+          <div class="rupiah-wrapper">
+            <span class="rupiah-prefix">Rp</span>
+            <input
+              class="rupiah-input"
+              type="number"
+              id="field-offer"
+              name="Offer Amount (Rp)"
+              required
+              min="1"
+              step="1"
+              placeholder="e.g. 150000000" />
+          </div>
+          <span class="field-hint">
+            <span class="lang-en">Enter amount in Indonesian Rupiah (IDR), numbers only.</span>
+            <span class="lang-id">Masukkan jumlah dalam Rupiah Indonesia (IDR), angka saja.</span>
+          </span>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-submit-wrap">
+          <button class="btn-submit" type="submit">
+            <span class="lang-en">Send Offer</span>
+            <span class="lang-id">Kirim Penawaran</span>
+          </button>
+        </div>
+
+      </form>
+
+      <p class="form-footnote">
+        <span class="lang-en">
+          Your offer is submitted securely and delivered directly
+          to the domain owner. Direct communication only &mdash;
+          no brokers, no third-party fees.
+        </span>
+        <span class="lang-id">
+          Penawaran Anda dikirim dengan aman dan langsung kepada
+          pemilik domain. Komunikasi langsung &mdash; tanpa broker,
+          tanpa biaya pihak ketiga.
+        </span>
+      </p>
+
+    </section>
+
+  </div><!-- /.wrapper -->
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+
+      <span class="footer-domain">jakartainternationalstadium.com</span>
+
+      <div class="lang-en">
+        <p class="footer-legal">
+          This domain is privately owned by an individual registrant
+          and is offered for sale in good faith. It is not affiliated
+          with, endorsed by, or connected to Jakarta International
+          Stadium (JIS), PT Jakarta Propertindo (Jakpro), the DKI
+          Jakarta Provincial Government, or any official body,
+          corporation, or organization.
+        </p>
+        <p class="footer-legal">
+          This page exists solely to facilitate a transparent and
+          lawful private domain acquisition. No trademark infringement,
+          misleading use, or bad-faith conduct is intended, implied, or
+          has occurred at any point since registration in July 2018.
+        </p>
+        <p class="footer-legal">
+          This domain name consists of common geographic and descriptive
+          terms only. It was independently registered in July 2018,
+          prior to the public naming and operational launch of any venue
+          of this name. No rights to any third-party trademark, logo,
+          or proprietary name are claimed or implied.
+        </p>
+      </div>
+
+      <div class="lang-id">
+        <p class="footer-legal">
+          Domain ini dimiliki secara pribadi oleh seorang pendaftar
+          perseorangan dan ditawarkan untuk dijual dengan itikad baik.
+          Domain ini tidak berafiliasi, didukung, atau terhubung dengan
+          Jakarta International Stadium (JIS), PT Jakarta Propertindo
+          (Jakpro), Pemerintah Provinsi DKI Jakarta, atau badan resmi,
+          korporasi, atau organisasi manapun.
+        </p>
+        <p class="footer-legal">
+          Halaman ini ada semata-mata untuk memfasilitasi akuisisi
+          domain pribadi yang transparan dan sah. Tidak ada pelanggaran
+          merek dagang, penggunaan yang menyesatkan, atau perilaku
+          itikad buruk yang dimaksudkan, tersirat, atau telah terjadi
+          sejak pendaftaran pada Juli 2018.
+        </p>
+        <p class="footer-legal">
+          Nama domain ini hanya terdiri dari istilah geografis dan
+          deskriptif umum. Domain ini didaftarkan secara independen
+          pada Juli 2018, sebelum penamaan publik dan peluncuran
+          operasional venue manapun dengan nama ini. Tidak ada klaim
+          atas merek dagang, logo, atau nama hak milik pihak ketiga
+          manapun.
+        </p>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <span class="footer-meta">
+        &copy; 2026 Private Domain Owner &middot; All Rights Reserved
+        &middot; No Official Affiliation
+      </span>
+
+      <span class="footer-updated">
+        <span class="lang-en">Page last updated: [Month Year]</span>
+        <span class="lang-id">Halaman terakhir diperbarui: [Bulan Tahun]</span>
+      </span>
+
+    </div>
+  </footer>
+
+</body>
+</html>
 
